@@ -15,9 +15,9 @@ let HeaderTop = ({ title }) => (
 let HeaderNavigation = ({ navLinks }) => (
     <div className="nav-scroller py-1 mb-2">
         <nav className="nav d-flex justify-content-between">
-        {navLinks.value.map((listItem, index) => (
-            <Link to={"/" + listItem.name} className="p-2 text-muted" key={index}>{listItem.name}</Link>
-        ))}
+            {navLinks.value.map((listItem, index) => (
+                <Link to={"/" + listItem.name} className="p-2 text-muted" key={index}>{listItem.name}</Link>
+            ))}
         </nav>
     </div>
 );
@@ -27,6 +27,6 @@ let Header = ({ fields }) => (
         <HeaderTop title={fields.title} />
         <HeaderNavigation navLinks={fields.navLinks} />
     </header>
-  );
+);
 
-  export default Header;
+export default Header;
