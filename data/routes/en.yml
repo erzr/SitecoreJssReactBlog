@@ -9,3 +9,35 @@ placeholders:
        link:
         href: https://www.sitecore.com/
         text: Visit Sitecore
+   - componentName: Row5050
+     placeholders:
+        jss-row-5050-left:
+          - componentName: FeaturedPost
+            fields:
+              eyebrow: World
+              title:
+                href: https://www.sitecore.com/
+                text: Featured Post Title
+              date: "2012-05-04T00:00:00Z"
+              description: This is some description text.
+              readMore:
+                href: https://www.sitecore.com/
+                text: Read More
+              image:
+                src: https://placeimg.com/200/250/people
+                alt: Placeholder Image
+        jss-row-5050-right:
+          - componentName: FeaturedPost
+            fields:
+              eyebrow: Mars
+              title:
+                href: https://www.sitecore.com/
+                text: Second Featured Post Title
+              date: "2018-05-04T00:00:00Z"
+              description: This is more description text.
+              readMore:
+                href: https://www.sitecore.com/
+                text: Always Read More
+              image:
+                src: https://placeimg.com/200/250/animals
+                alt: Placeholder Image
