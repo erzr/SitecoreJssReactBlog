@@ -1,0 +1,15 @@
+id: featured-post-1
+componentName: FeaturedPost
+fields:
+  eyebrow: World
+  title:
+    href: https://www.sitecore.com/
+    text: Featured Post Title
+  date: "2012-05-04T00:00:00Z"
+  description: This is some description text.
+  readMore:
+    href: https://www.sitecore.com/
+    text: Read More
+  image:
+    src: /data/media/img/people.jpg
+    alt: Placeholder Image

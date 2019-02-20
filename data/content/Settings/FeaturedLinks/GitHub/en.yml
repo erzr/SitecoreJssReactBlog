@@ -1,0 +1,6 @@
+id: github-featured-link
+templateName: FeaturedLink-Template
+fields:
+  link:
+    href: https://github.com/erzr/
+    text: GitHub

@@ -1,0 +1,15 @@
+id: featured-post-2
+componentName: FeaturedPost
+fields:
+  eyebrow: Mars
+  title:
+    href: https://www.sitecore.com/
+    text: Second Featured Post Title
+  date: "2018-05-04T00:00:00Z"
+  description: This is more description text.
+  readMore:
+    href: https://www.sitecore.com/
+    text: Always Read More
+  image:
+    src: /data/media/img/animals.jpg
+    alt: Placeholder Image

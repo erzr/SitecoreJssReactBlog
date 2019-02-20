@@ -1,0 +1,6 @@
+id: sitecore-featured-link
+templateName: FeaturedLink-Template
+fields:
+  link:
+    href: https://www.sitecore.com/
+    text: Visit Sitecore
