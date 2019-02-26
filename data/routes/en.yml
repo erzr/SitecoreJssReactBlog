@@ -21,6 +21,7 @@ placeholders:
           - componentName: SectionTitle
             fields:
               title: From the Firehose
+          - componentName: RecentPosts
         jss-row-7525-right:
           - componentName: Callout
             fields:
