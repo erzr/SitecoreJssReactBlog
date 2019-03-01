@@ -1,4 +1,5 @@
 id: header-content
+displayName: HeaderContent
 componentName: Header
 fields:
   title: Adam Lamarre

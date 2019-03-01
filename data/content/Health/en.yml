@@ -1,2 +1,4 @@
 id: page-health
 template: ListingPage-Template
+fields:
+  title: Health

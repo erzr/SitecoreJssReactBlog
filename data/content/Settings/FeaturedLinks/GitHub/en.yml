@@ -1,5 +1,5 @@
 id: github-featured-link
-templateName: FeaturedLink-Template
+template: FeaturedLink-Template
 fields:
   link:
     href: https://github.com/erzr/

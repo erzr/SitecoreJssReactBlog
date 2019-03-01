@@ -1,9 +1,13 @@
 import React from 'react';
 import PostListingItem from '../PostListingItem';
 
-const PostListing = (props) => (
+const PostListing = ({posts}) => (
   <div>
-      <PostListingItem />
+      {
+        posts.map(post => (
+          <PostListingItem post={post} />
+        ))
+      }
   </div>
 );
 

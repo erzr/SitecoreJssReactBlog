@@ -1,5 +1,5 @@
 id: sitecore-featured-link
-templateName: FeaturedLink-Template
+template: FeaturedLink-Template
 fields:
   link:
     href: https://www.sitecore.com/

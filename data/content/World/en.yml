@@ -1,2 +1,4 @@
 id: page-world
 template: ListingPage-Template
+fields:
+  title: World

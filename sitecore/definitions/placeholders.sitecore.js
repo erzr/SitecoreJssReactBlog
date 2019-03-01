@@ -9,6 +9,10 @@ import { Manifest } from '@sitecore-jss/sitecore-jss-manifest';
  */
 export default function addPlaceholdersToManifest(manifest) {
   manifest.addPlaceholder(
-    { name: 'jss-main', displayName: 'Main' }
+    { name: 'jss-main' },
+    { name: 'jss-row-5050-left' },
+    { name: 'jss-row-5050-right' },
+    { name: 'jss-row-7525-left' },
+    { name: 'jss-row-7525-right' }
   );
 }

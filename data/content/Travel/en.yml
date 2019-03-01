@@ -1,2 +1,4 @@
 id: page-travel
 template: ListingPage-Template
+fields:
+  title: Travel

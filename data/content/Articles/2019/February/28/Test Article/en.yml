@@ -1,0 +1,4 @@
+template: Article-Template
+fields:
+  title: Test Article
+  body: <p>This is test body text.</p>

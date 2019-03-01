@@ -1,2 +1,4 @@
 id: page-technology
 template: ListingPage-Template
+fields:
+  title: Technology

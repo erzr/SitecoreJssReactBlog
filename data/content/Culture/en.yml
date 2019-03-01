@@ -1,2 +1,4 @@
 id: page-culture
 template: ListingPage-Template
+fields:
+  title: Culture
