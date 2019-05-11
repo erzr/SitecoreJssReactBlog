@@ -7,7 +7,7 @@ const GET_HEADER_SETTINGS_QUERY = gql`
 query GetHeaderSettings($settingsId:String)
 {
   item(path:$settingsId) {
-    ... on HeaderTemplate {
+    ... on HeaderSettingsTemplate {
     	title {
         rendered
       }
@@ -30,7 +30,7 @@ let HeaderTop = ({ title }) => (
     <div className="blog-header py-3">
         <div className="row flex-nowrap justify-content-between align-items-center">
             <div className="col-12 text-center">
-                <a className="blog-header-logo text-dark" href="/">{title}</a>
+                <Link to="/" className="blog-header-logo text-dark">{title}</Link>
             </div>
         </div>
     </div>
@@ -48,10 +48,11 @@ let HeaderNavigation = ({ navLinks }) => (
 
 let Header = ({ headerQuery }) => (
     <header>
+        {console.log('header')}
         {headerQuery.item && headerQuery.item.title && <HeaderTop title={headerQuery.item.title.rendered} />}
         {headerQuery.item && headerQuery.item.navLinks && <HeaderNavigation navLinks={headerQuery.item.navLinks.targetItems} />}
     </header>
 );
 
 export default GraphQLData(GET_HEADER_SETTINGS_QUERY, { name: 'headerQuery', options: { 
-    variables: { settingsId: "{2EF063EF-3F30-53B6-B425-90025FA5691A}" } } })(Header);
+    variables: { settingsId: "{B4BF76E8-50F2-5170-88F4-2C73FD0F5D4E}" } } })(Header);
