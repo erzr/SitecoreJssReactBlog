@@ -1,0 +1,4 @@
+id: page-culture
+template: ListingPage-Route
+fields:
+  title: Culture

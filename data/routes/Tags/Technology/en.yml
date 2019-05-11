@@ -1,0 +1,4 @@
+id: page-technology
+template: ListingPage-Route
+fields:
+  title: Technology

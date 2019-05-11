@@ -1,33 +1,32 @@
 id: home-page
 placeholders:
   jss-main:
-   - id: header-content
-   - componentName: Hero
+   - componentName: Hero-Component
      fields:
        title: Hero Title
        description: This is some description text
        link:
         href: https://www.sitecore.com/
         text: Visit Sitecore
-   - componentName: Row5050
+   - componentName: Row5050-Component
      placeholders:
         jss-row-5050-left:
          - id: featured-post-1
         jss-row-5050-right:
          - id: featured-post-2
-   - componentName: Row7525
+   - componentName: Row7525-Component
      placeholders:
         jss-row-7525-left:
-          - componentName: SectionTitle
+          - componentName: SectionTitle-Component
             fields:
               title: From the Firehose
-          - componentName: RecentPosts
+          - componentName: RecentPosts-Component
         jss-row-7525-right:
-          - componentName: Callout
+          - componentName: Callout-Component
             fields:
               title: About me
               body: This is the call body <strong>rich text</strong>. Exciting! Interesting <u>facts</u> go <em>here</em>.
-          - componentName: FeaturedLinks
+          - componentName: FeaturedLinks-Component
             fields:
               title: Elsewhere
               links:

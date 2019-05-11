@@ -1,0 +1,4 @@
+id: page-opinion
+template: ListingPage-Route
+fields:
+  title: Opinion

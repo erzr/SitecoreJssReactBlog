@@ -1,5 +1,5 @@
 id: featured-post-2
-componentName: FeaturedPost
+componentName: FeaturedPost-Component
 fields:
   eyebrow: Mars
   title:

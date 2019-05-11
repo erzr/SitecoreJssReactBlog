@@ -1,0 +1,4 @@
+id: page-world
+template: ListingPage-Route
+fields:
+  title: World

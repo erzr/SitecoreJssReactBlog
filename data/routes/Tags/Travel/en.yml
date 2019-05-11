@@ -1,0 +1,4 @@
+id: page-travel
+template: ListingPage-Route
+fields:
+  title: Travel

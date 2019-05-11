@@ -1,0 +1,18 @@
+id: header-settings
+displayName: HeaderSettings
+template: HeaderSettings-Template
+fields:
+  title: Adam Lamarre
+  navLinks:
+   - id: page-world
+   - id: page-us
+   - id: page-technology
+   - id: page-design
+   - id: page-culture
+   - id: page-business
+   - id: page-politics
+   - id: page-opinion
+   - id: page-science
+   - id: page-health
+   - id: page-style
+   - id: page-travel

@@ -1,27 +1,29 @@
 import React from 'react';
 import gql from "graphql-tag";
-import { Query } from "react-apollo";
-import { Text } from '@sitecore-jss/sitecore-jss-react';
 import PostListing from '../PostListing';
+import GraphQLData from '../../lib/GraphQLData';
 
-const GET_RECENT_POSTS = gql`
+const GET_RECENT_POSTS_QUERY = gql`
+  query GetRecentPosts($howMany: Int) 
   {
     search(fieldsEqual:[{
       name:"_templatename"
-      value:"Article-Template"
+      value:"Article-Route"
     },
     {
       name:"_fullpath"
       value:"/sitecore/content/blog*"
-    }]) {
+    }]
+    first:$howMany) {
       results {
         items {
           item {
-            ... on ArticleTemplate {
+            url
+            ... on ArticleRoute {
               title {
                 value
               }
-              body {
+              summary {
                 value
               }
             }
@@ -32,16 +34,10 @@ const GET_RECENT_POSTS = gql`
   }
 `;
 
-const RecentPosts = (props) => (
-  <Query query={GET_RECENT_POSTS}>
-    {({ loading, error, data }) => {
-      if (loading) return "Loading...";
-      if (error) return `Error! ${error.message}`;
-      return (
-        <PostListing posts={data.search.results.items} />
-      );
-    }}
-  </Query>
-);
+const RecentPosts = ({ postQuery }) =>
+  <React.Fragment>
+    {postQuery.search && <PostListing posts={postQuery.search.results.items} />}
+  </React.Fragment>
+  ;
 
-export default RecentPosts;
+export default GraphQLData(GET_RECENT_POSTS_QUERY, { name: 'postQuery', options: { variables: { howMany: 5 } } })(RecentPosts);

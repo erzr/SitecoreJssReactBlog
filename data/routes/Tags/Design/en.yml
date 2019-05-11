@@ -1,0 +1,4 @@
+id: page-design
+template: ListingPage-Route
+fields:
+  title: Design

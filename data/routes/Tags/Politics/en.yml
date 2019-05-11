@@ -1,0 +1,4 @@
+id: page-politics
+template: ListingPage-Route
+fields:
+  title: Politics

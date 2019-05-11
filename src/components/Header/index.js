@@ -1,12 +1,36 @@
 import React from 'react';
-import { Text } from '@sitecore-jss/sitecore-jss-react';
 import { Link } from 'react-router-dom'
+import gql from "graphql-tag";
+import GraphQLData from '../../lib/GraphQLData';
+
+const GET_HEADER_SETTINGS_QUERY = gql`
+query GetHeaderSettings($settingsId:String)
+{
+  item(path:$settingsId) {
+    ... on HeaderTemplate {
+    	title {
+        rendered
+      }
+      navLinks {
+        targetItems {
+          url
+          ... on ListingPageRoute {
+            title {
+              rendered
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`;
 
 let HeaderTop = ({ title }) => (
     <div className="blog-header py-3">
         <div className="row flex-nowrap justify-content-between align-items-center">
             <div className="col-12 text-center">
-                <Text tag="span" className="blog-header-logo text-dark" field={title} />
+                <a className="blog-header-logo text-dark" href="/">{title}</a>
             </div>
         </div>
     </div>
@@ -16,17 +40,18 @@ let HeaderNavigation = ({ navLinks }) => (
     <div className="nav-scroller py-1 mb-2">
         <nav className="nav d-flex justify-content-between">
             {navLinks.map((listItem, index) => (
-                <Link to={"/" + listItem.fields.title.value} className="p-2 text-muted" key={index}>{listItem.fields.title.value}</Link>
+                <Link to={listItem.url} className="p-2 text-muted" key={index}>{listItem.title.rendered}</Link>
             ))}
         </nav>
     </div>
 );
 
-let Header = ({ fields }) => (
+let Header = ({ headerQuery }) => (
     <header>
-        <HeaderTop title={fields.title} />
-        <HeaderNavigation navLinks={fields.navLinks} />
+        {headerQuery.item && headerQuery.item.title && <HeaderTop title={headerQuery.item.title.rendered} />}
+        {headerQuery.item && headerQuery.item.navLinks && <HeaderNavigation navLinks={headerQuery.item.navLinks.targetItems} />}
     </header>
 );
 
-export default Header;
+export default GraphQLData(GET_HEADER_SETTINGS_QUERY, { name: 'headerQuery', options: { 
+    variables: { settingsId: "{2EF063EF-3F30-53B6-B425-90025FA5691A}" } } })(Header);

@@ -1,0 +1,4 @@
+id: page-style
+template: ListingPage-Route
+fields:
+  title: Style

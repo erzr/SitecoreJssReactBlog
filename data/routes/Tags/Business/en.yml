@@ -1,0 +1,4 @@
+id: page-business
+template: ListingPage-Route
+fields:
+  title: Business

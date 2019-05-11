@@ -1,0 +1,4 @@
+id: page-science
+template: ListingPage-Route
+fields:
+  title: Science

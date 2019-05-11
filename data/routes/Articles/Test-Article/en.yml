@@ -1,0 +1,5 @@
+id: test-article
+template: Article-Route
+fields:
+  title: Test Article
+  summary: This is a test article, it's pretty great.

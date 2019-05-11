@@ -2,13 +2,13 @@ import React from 'react';
 import PostListingItem from '../PostListingItem';
 
 const PostListing = ({posts}) => (
-  <div>
+  <React.Fragment>
       {
-        posts.map(post => (
-          <PostListingItem post={post} />
+        posts.map((post, index) => (
+          <PostListingItem post={post} key={index} />
         ))
       }
-  </div>
+  </React.Fragment>
 );
 
 export default PostListing;
