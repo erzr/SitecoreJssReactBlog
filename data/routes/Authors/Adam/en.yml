@@ -1,0 +1,5 @@
+id: authors-adam
+template: Author-Route
+fields:
+  first_name: Adam
+  last_name: Lamarre

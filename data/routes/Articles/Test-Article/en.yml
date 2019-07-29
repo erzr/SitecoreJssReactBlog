@@ -3,3 +3,34 @@ template: Article-Route
 fields:
   title: Test Article
   summary: This is a test article, it's pretty great.
+  author:
+    id: authors-adam
+placeholders:
+  jss-main:
+   - componentName: Row7525-Component
+     placeholders:
+        jss-row-7525-left:
+          - componentName: ArticleHeader-Component
+          - componentName: TextContent-Component
+            fields:
+              content: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu viverra eros. Nullam a nisl id est faucibus aliquam non a justo. Etiam hendrerit sem vitae ante varius, quis pulvinar turpis sodales. Phasellus ac tortor eget elit consequat vulputate. Donec pharetra mollis erat quis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur massa quis molestie tincidunt. Sed lacinia tellus sit amet tristique cursus. Maecenas eget purus eros. In consectetur nisi vel ipsum scelerisque laoreet. Pellentesque porta at purus in suscipit. Sed est ipsum, sollicitudin nec dui sed, lobortis vehicula nibh. Aliquam pretium diam eros, vitae imperdiet nulla mattis nec. In tristique nulla luctus purus consectetur mollis. Fusce vehicula molestie ante sed ullamcorper.</p>
+          - componentName: YouTubeEmbed-Component
+            fields:
+              video_id: MjwtTSoIYYs
+          - componentName: TextContent-Component
+            fields:
+              content: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu viverra eros. Nullam a nisl id est faucibus aliquam non a justo. Etiam hendrerit sem vitae ante varius, quis pulvinar turpis sodales. Phasellus ac tortor eget elit consequat vulputate. Donec pharetra mollis erat quis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur massa quis molestie tincidunt. Sed lacinia tellus sit amet tristique cursus. Maecenas eget purus eros. In consectetur nisi vel ipsum scelerisque laoreet. Pellentesque porta at purus in suscipit. Sed est ipsum, sollicitudin nec dui sed, lobortis vehicula nibh. Aliquam pretium diam eros, vitae imperdiet nulla mattis nec. In tristique nulla luctus purus consectetur mollis. Fusce vehicula molestie ante sed ullamcorper.</p>
+          - componentName: BlockQuote-Component
+            fields:
+              quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              citation: Someone famous in Source Title
+        jss-row-7525-right:
+          - componentName: ImagePromo-Component
+            fields:
+              image:
+                src: /data/media/img/promo.png
+          - componentName: RelatedArticles-Component
+            fields:
+              title: Related Articles
+              articles:
+                - id: test-article-2

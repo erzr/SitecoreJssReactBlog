@@ -7,7 +7,9 @@ export default function(manifest) {
     icon: SitecoreIcon.ShapeSquare,
     fields: [
         { name: 'title', type: CommonFieldTypes.SingleLineText },
-        { name: 'summary', type: CommonFieldTypes.MultiLineText }
+        { name: 'summary', type: CommonFieldTypes.MultiLineText },
+        { name: 'date', type: CommonFieldTypes.Date },
+        { name: 'author', type: CommonFieldTypes.ItemLink }
     ],
   });
 }
