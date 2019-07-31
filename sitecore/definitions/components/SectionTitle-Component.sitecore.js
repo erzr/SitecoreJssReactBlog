@@ -11,7 +11,7 @@ export default function(manifest) {
     name: 'SectionTitle-Component',
     icon: SitecoreIcon.DocumentTag,
     fields: [
-      { name: 'title', type: CommonFieldTypes.SingleLineText },
+      { name: 'title', type: CommonFieldTypes.SingleLineText, displayName: 'Title' }
     ]
   });
 }

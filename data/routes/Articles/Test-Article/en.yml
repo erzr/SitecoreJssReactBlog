@@ -5,6 +5,8 @@ fields:
   summary: This is a test article, it's pretty great.
   author:
     id: authors-adam
+  tags:
+    - id: page-business
 placeholders:
   jss-main:
    - componentName: Row7525-Component

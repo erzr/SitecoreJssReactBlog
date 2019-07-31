@@ -11,13 +11,8 @@ export default function(manifest) {
     name: 'BlockQuote-Component',
     icon: SitecoreIcon.DocumentTag,
     fields: [
-      { name: 'quote', type: CommonFieldTypes.SingleLineText },
-      { name: 'citation', type: CommonFieldTypes.SingleLineText },
-    ],
-    /*
-    If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
-    register it here, or components added to that placeholder will not be returned by Sitecore:
-    placeholders: ['exposed-placeholder-name']
-    */
+      { name: 'quote', type: CommonFieldTypes.SingleLineText, displayName: 'Quote' },
+      { name: 'citation', type: CommonFieldTypes.SingleLineText, displayName: 'Citation' },
+    ]
   });
 }

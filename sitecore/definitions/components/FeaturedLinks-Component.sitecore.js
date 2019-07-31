@@ -11,8 +11,8 @@ export default function(manifest) {
     name: 'FeaturedLinks-Component',
     icon: SitecoreIcon.DocumentTag,
     fields: [
-      { name: 'title', type: CommonFieldTypes.SingleLineText },
-      { name: 'links', type: CommonFieldTypes.ContentList }
+      { name: 'title', type: CommonFieldTypes.SingleLineText, displayName: 'Title' },
+      { name: 'links', type: CommonFieldTypes.ContentList, displayName: 'Links' }
     ]
   });
 }

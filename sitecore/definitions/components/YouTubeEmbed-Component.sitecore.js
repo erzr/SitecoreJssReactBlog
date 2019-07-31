@@ -11,15 +11,10 @@ export default function(manifest) {
     name: 'YouTubeEmbed-Component',
     icon: SitecoreIcon.DocumentTag,
     fields: [
-      { name: 'video_id', type: CommonFieldTypes.SingleLineText },
-      { name: 'video_height', type: CommonFieldTypes.SingleLineText },
-      { name: 'video_width', type: CommonFieldTypes.SingleLineText },
-      { name: 'video_controls', type: CommonFieldTypes.Checkbox }
-    ],
-    /*
-    If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
-    register it here, or components added to that placeholder will not be returned by Sitecore:
-    placeholders: ['exposed-placeholder-name']
-    */
+      { name: 'video_id', type: CommonFieldTypes.SingleLineText, displayName: 'Video Id' },
+      { name: 'video_height', type: CommonFieldTypes.SingleLineText, displayName: 'Video Height' },
+      { name: 'video_width', type: CommonFieldTypes.SingleLineText, displayName: 'Video Width' },
+      { name: 'video_controls', type: CommonFieldTypes.Checkbox, displayName: 'Show Video Controls' }
+    ]
   });
 }

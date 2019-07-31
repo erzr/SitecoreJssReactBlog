@@ -6,8 +6,8 @@ export default function(manifest) {
     name: 'Author-Route',
     icon: SitecoreIcon.Person,
     fields: [
-        { name: 'first_name', type: CommonFieldTypes.SingleLineText },
-        { name: 'last_name', type: CommonFieldTypes.SingleLineText }
+        { name: 'first_name', type: CommonFieldTypes.SingleLineText, displayName: 'First Name' },
+        { name: 'last_name', type: CommonFieldTypes.SingleLineText, displayName: 'Last Name' }
     ],
   });
 }

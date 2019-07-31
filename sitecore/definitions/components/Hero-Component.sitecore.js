@@ -5,9 +5,9 @@ export default function(manifest) {
   manifest.addComponent({
     name: 'Hero-Component',
     fields: [
-      { name: 'title', type: CommonFieldTypes.SingleLineText },
-      { name: 'description', type: CommonFieldTypes.SingleLineText },
-      { name: 'link', type: CommonFieldTypes.GeneralLink },
+      { name: 'title', type: CommonFieldTypes.SingleLineText, displayName: 'Title' },
+      { name: 'description', type: CommonFieldTypes.SingleLineText, displayName: 'Description' },
+      { name: 'link', type: CommonFieldTypes.GeneralLink, displayName: 'Link' },
     ],
   });
 }

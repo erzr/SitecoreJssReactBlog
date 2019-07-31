@@ -6,8 +6,8 @@ export default function(manifest) {
     name: 'Callout-Component',
     icon: SitecoreIcon.DocumentTag,
     fields: [
-      { name: 'title', type: CommonFieldTypes.SingleLineText },
-      { name: 'body', type: CommonFieldTypes.RichText }
+      { name: 'title', type: CommonFieldTypes.SingleLineText, displayName: 'Title' },
+      { name: 'body', type: CommonFieldTypes.RichText, displayName: 'Body' }
     ]
   });
 }

@@ -11,12 +11,7 @@ export default function(manifest) {
     name: 'TextContent-Component',
     icon: SitecoreIcon.DocumentTag,
     fields: [
-      { name: 'content', type: CommonFieldTypes.RichText },
-    ],
-    /*
-    If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
-    register it here, or components added to that placeholder will not be returned by Sitecore:
-    placeholders: ['exposed-placeholder-name']
-    */
+      { name: 'content', type: CommonFieldTypes.RichText, displayName: 'Content' },
+    ]
   });
 }
