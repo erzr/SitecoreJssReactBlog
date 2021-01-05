@@ -39,7 +39,7 @@
     "apollo-link-batch-http": "~1.2.6",
     "apollo-link-http": "~1.5.9",
     "apollo-link-persisted-queries": "~0.2.2",
-    "axios": "~0.18.0",
+    "axios": "~0.21.1",
     "bootstrap": "^4.3.1",
     "graphql": "~14.0.2",
     "graphql-tag": "~2.10.0",
